@@ -10,4 +10,5 @@ With this simple framework you can create an infinite amount of your very own me
 - See [demo.jsx](src/demo.jsx)
 
 ## Limitations
-Sub-sub-menus are not supported (yet).
+- Sub-sub-menus are not supported (yet)
+- There are no error handlers or parameters checks
