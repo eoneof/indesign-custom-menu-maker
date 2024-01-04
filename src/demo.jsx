@@ -36,7 +36,7 @@ function demo() {
   }
 
   function unloadMenu() {
-    customMenu.unload()
+    try {customMenu.unload()} catch (err) {}
   }
 
   /*******************
