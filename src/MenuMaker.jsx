@@ -3,7 +3,7 @@ var MenuMaker =  /** @class */ (function () {
 
   /**
    * @constructor
-   * @arg {{ name: string, items: [{ name: string, handler(): void, enabled(): boolean }] }} props
+   * @arg {{ name: string, items: [{ name: string, onClick(): void, enabled(): boolean }] }} props
    */
   function $(props) {
     this.menuName = props.name
@@ -36,11 +36,11 @@ var SubMenu = /** @class */ (function () {
 
   /**
    * @constructor
-   * @arg {{ name: string, handler(): void, enabled(): boolean }} props
+   * @arg {{ name: string, onClick(): void, enabled(): boolean }} props
    */
   function $(props) {
     this.name = props.name
-    this.handler = props.handler
+    this.onClick = props.onClick
     this.enabled = props.enabled || function () {
       return true
     }
@@ -52,7 +52,7 @@ var SubMenu = /** @class */ (function () {
    */
   $.prototype.setHandlers = function (subMenu) {
     var self = this
-    subMenu.eventListeners.add(Event.ON_INVOKE, this.handler)
+    subMenu.eventListeners.add(Event.ON_INVOKE, this.onClick)
     subMenu.eventListeners.add('beforeDisplay', function () {
       subMenu.enabled = self.enabled()
     })

@@ -45,7 +45,7 @@ function demo() {
 
   var disabledSubMenu = new SubMenu({
     name: 'Submenu Disabled By Default',
-    handler: sayHello,
+    onClick: sayHello,
     enabled: function () {
       return false
       /* NOTE: `enabled` parameter must be a function
@@ -55,14 +55,14 @@ function demo() {
 
   var enabledSubMenu = new SubMenu({
     name: 'Submenu Enabled By Default',
-    handler: sayHello,
+    onClick: sayHello,
     /* You may omit `enabled` parameter entirely
        so the menu item will always be active by default */
   })
 
   var changeContextSubMenu = new SubMenu({
     name: 'Change Context',
-    handler: function () {
+    onClick: function () {
       setContext('inactive')
       /* When clicked, this item will become inactive
          the next time you open the menu */
@@ -73,7 +73,7 @@ function demo() {
 
   var fourthSubMenu = new SubMenu({
     name: 'Unload the Custom menu',
-    handler: unloadMenu,
+    onClick: unloadMenu,
     enabled: isEnabled
   })
 
