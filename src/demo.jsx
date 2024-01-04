@@ -92,6 +92,8 @@ function demo() {
          as they listed here */
     ],
   })
+
+  app.addEventListener('beforeQuit', unloadMenu)
 }
 
 demo()
