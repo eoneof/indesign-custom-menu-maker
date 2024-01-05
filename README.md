@@ -2,6 +2,8 @@
 
 With this simple framework you can create an infinite amount of your very own menu items in a declarative way.
 
+Menus are useful for startup scripts with lots of functionality.
+
 ![screenshot](/img/screenshot.png)
 *Demo*
 
@@ -11,4 +13,4 @@ With this simple framework you can create an infinite amount of your very own me
 
 ## Limitations
 - Sub-sub-menus are not supported (yet)
-- There are no error handlers or parameters checks
+- There are no extra error handlers or parameters checks
