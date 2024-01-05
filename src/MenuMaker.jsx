@@ -1,4 +1,6 @@
-var MenuMaker =  /** @class */ (function () {
+/* Add semicolon to prevent bad things from happening to concatenated code. */
+;
+
   var menuBar = app.menus.item('$ID/Main').submenus
 
   /**
