@@ -26,7 +26,7 @@ var MenuMaker = /** @class */ (function () {
     }
   }
 
-  $.prototype.unload = /** method */ function () {
+  $.prototype.unload = /** @method */ function () {
     try {
       menuBar.item(this.menuName).remove()
     } catch (err) {}
@@ -48,7 +48,7 @@ var SubMenu = /** @class */ (function () {
   /**
    * @param {MenuItem} subMenu
    */
-  $.prototype.setHandlers = /** method */ function (subMenu) {
+  $.prototype.setHandlers = /** @method */ function (subMenu) {
     var self = this
 
     subMenu.eventListeners.add(Event.ON_INVOKE, this.onClick)
