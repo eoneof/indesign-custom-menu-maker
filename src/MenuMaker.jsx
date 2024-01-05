@@ -24,9 +24,10 @@ var MenuMaker =  /** @class */ (function () {
     }
   }
 
-  /** @method */
-  $.prototype.unload = function () {
-    this.menu.remove()
+  $.prototype.unload = /** method */ function () {
+    try {
+      menuBar.item(this.menuName).remove()
+    } catch (err) {}
   }
 
   return $
