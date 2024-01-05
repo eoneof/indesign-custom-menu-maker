@@ -93,7 +93,7 @@ function demo() {
     ],
   })
 
-  app.addEventListener('beforeQuit', unloadMenu)
+  app.addEventListener(Event.BEFORE_QUIT, unloadMenu)
 }
 
 demo()

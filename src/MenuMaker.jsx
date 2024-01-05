@@ -52,8 +52,9 @@ var SubMenu = /** @class */ (function () {
    */
   $.prototype.setHandlers = function (subMenu) {
     var self = this
+
     subMenu.eventListeners.add(Event.ON_INVOKE, this.onClick)
-    subMenu.eventListeners.add('beforeDisplay', function () {
+    subMenu.eventListeners.add(Event.BEFORE_DISPLAY, function () {
       subMenu.enabled = self.enabled()
     })
   }
