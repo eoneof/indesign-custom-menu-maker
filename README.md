@@ -2,7 +2,7 @@
 
 With this simple framework you can create an infinite amount of your very own menu items in a declarative way.
 
-Menus are useful for startup scripts with lots of functionality.
+Menus are useful for multi-purpose startup scripts.
 
 ![screenshot](/img/screenshot.png)
 *Demo*
