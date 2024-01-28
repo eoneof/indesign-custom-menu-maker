@@ -1,4 +1,4 @@
-# InDesign custom menu easy maker
+# InDesign custom menu maker
 
 With this simple framework you can create an infinite amount of your very own menu items in a declarative way.
 
