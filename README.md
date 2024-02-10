@@ -22,9 +22,9 @@ Menus are useful for multi-purpose startup scripts.
     onClick: handler
   })
   ```
-- Define a menu item:
+- Define a menu:
   ```js
-  var menuItem = new MenuMaker({
+  var menu = new MenuMaker({
     name: 'Stuff',
     items: [subMenu]
   })
