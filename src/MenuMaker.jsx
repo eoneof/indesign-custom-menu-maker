@@ -29,7 +29,7 @@ var MenuMaker = /** @class */ (function () {
   $.prototype.unload = /** @method */ function () {
     try {
       menuBar.item(this.menuName).remove()
-    } catch (err) {}
+    } catch (_) {}
   }
 
   return $
@@ -58,4 +58,4 @@ var SubMenu = /** @class */ (function () {
   }
 
   return $
-}())
+}());
